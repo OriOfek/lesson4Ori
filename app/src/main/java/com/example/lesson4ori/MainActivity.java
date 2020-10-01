@@ -37,10 +37,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         population = (TextView) findViewById(R.id.pop);
         square = (TextView) findViewById(R.id.squre);
         lands = new String[]{"continent","Africa","Europe","Asia","America"};
-        countries = new String[][]{{"country","Nigeria","Ethiopia","Egypt","South Africa","Kenya","Uganda","Algeria"},
-                {"country","Russia","Germany","United Kingdom","France","Italy","Spain","Ukraine"},
-                {"country","China","India","Indonesia","Pakistan","Bangladesh","Japan","Philippines"}
-                ,{"country","United States","Brazil","Mexico","Colombia","Argentina","Canada","Peru"}};
         info = new String[][][][] { {    { {"999.6 km2","23,437,435"}, //Niferia
                 {"Amharic","109.2M","Ethiopia, Be happy","Addis Ababa" },//Ethiopia
                 {"Masri","98.42M","Bilady, Bilady, Bilady","Cairo" },
@@ -72,6 +68,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         //world { continent{   { country1{city{popalation,squre}} }
 
+        countries = new String[][]{{"country","Nigeria","Ethiopia","Egypt","South Africa","Kenya","Uganda","Algeria"},
+                {"country","Russia","Germany","United Kingdom","France","Italy","Spain","Ukraine"},
+                {"country","China","India","Indonesia","Pakistan","Bangladesh","Japan","Philippines"}
+                ,{"country","United States","Brazil","Mexico","Colombia","Argentina","Canada","Peru"}};
+
         city = new String[][][] {{ {"Lagos","Kano","Ibadan","Benin City","Port Harcourt"}, //Niferia
                 {"Addis Ababa","Mekelle","Gondar", "Adama","Hawassa" },//Ethiopia
                 {"Abu El Matamir","Abu Hummus","Baltim","Cairo","Bilbeis"},
@@ -82,24 +83,24 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 { {"Abakan","Abdulino","Belinsky","Moscow","Beslan"},
                         {"Haan","Kaarst","Kaltenkirchen","Berlin","Kenzingen" },
                         {"Bristol","Ely","Hereford","London","Leicester" },
-                        {"French","67.081M","La Marseillaise","Paris" ,""},
-                        {"Italian","60.3174M","The Song of the Italians","Rome" },
-                        {"Spanish","47.431M","Marcha Real","Madrid" },
-                        {"Ukrainian","41.660M","Derzhavnyi Himn Ukrayiny","Kyiv" }} ,
-                { {"Standard Chinese","1,400,050,000","义勇军进行曲","Beijing"},
-                        {"Hindi and English","1,352,642,280","Jana Gana Mana","New Delhi" },
-                        {"Indonesian","267.670M","Indonesia Raya","Jakarta" },
-                        {"English and Urdu","212,228M","Qaumī Tarānah","Islamabad" },
-                        {"Bengali","161.376M","Amar Sonar Bangla","Dhaka" },
-                        {"Japanese","125.960M","Kimigayo","Tokyo" },
-                        {"Filipino and English","109.048M","Lupang Hinirang","Manila" }},
-                { {"English","328.239M","The Star-Spangled Banner","Washington, D.C."},
-                        {"Portuguese","210.147M","Hino Nacional Brasileiro","Brasília" },
-                        {"Spanish","128.649M","Himno Nacional Mexicano","Mexico City" },
-                        {"English and Spanish","50.372M","Himno Nacional de la República de Colombia","Bogotá" },
-                        {"None(there are many languages)","44.938M","Himno Nacional Argentino","Buenos Aires" },
-                        {"English and French","37.971M","O Canada","Ottawa" },
-                        {"Spanish","32.824M","Himno Nacional del Perú","Lima" }}};
+                        {"Marseille","Lyon","Toulouse","Paris" ,"Nice"},
+                        {"Naples","Turin","Palermo","Rome","Milan" },
+                        {"Barcelona","Valencia","Seville","Madrid","Málaga" },
+                        {"Odesa","Donetsk","Dnipro","Kyiv","Kharkiv" }} ,
+                { {"Macau","Hong Kong","Tianjin","Beijing","Bengbu"},
+                        {"Mumbai","Chennai","Bangalore","New Delhi","Hyderabad" },
+                        {"Surabaya","Bekasi","Bandung","Jakarta","Medan" },
+                        {"Lahore","Gujranwala","Peshawar","Multan","Hyderabad" },
+                        {"Chittagong","Rajshahi","Mymensingh","Dhaka" ,"Khulna"},
+                        {"Seto","Ichinomiya","Okazaki","Tokyo","Toyohashi" },
+                        {"Quezon City","Palayan","Puerto Princesa","Manila","San Juan" }},
+                { {"Sitka","Juneau","Wrangell","Washington, D.C.","Oklahoma City"},
+                        {"Goiânia","Manaus","Rio de Janeiro","Brasília","São Paulo" },
+                        {"Ecatepec","Guadalajara","Puebla City","Mexico City","Ciudad Juárez" },
+                        {"Cali","Barranquilla","Cartagena","Bogotá","Santa Marta" },
+                        {"Alvear","Bella Vista","Empedrado","Buenos Aires","Esquina" },
+                        {"Airdrie","Camrose","Leduc","Ottawa","Lacombe" },
+                        {"Cuzco","Huancayo","Huaraz","Lima","Ica" }}};
         adp = new ArrayAdapter<String>(this
                 ,R.layout.support_simple_spinner_dropdown_item,lands);
         snCo.setAdapter(adp);
