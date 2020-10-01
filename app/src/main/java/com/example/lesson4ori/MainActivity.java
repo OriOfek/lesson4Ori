@@ -73,16 +73,16 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         //world { continent{   { country1{city{popalation,squre}} }
 
         city = new String[][][] {{ {"Lagos","Kano","Ibadan","Benin City","Port Harcourt"}, //Niferia
-                {"Amharic","109.2M","Ethiopia, Be happy","Addis Ababa" },//Ethiopia
-                {"Masri","98.42M","Bilady, Bilady, Bilady","Cairo" },
-                {"Afrikaans","57.78M","National anthem of South Africa","Pretoria" },
-                {"Swahili","47.564M","Ee Mungu Nguvu Yetu","Nairobi" },
-                {"English and Swahili","42.729M","Oh Uganda, Land of Beauty","Kampala" },
-                {"Arabic and Berber","43.6M","Kassaman","Algiers" }},
-                { {"Russian","146.748M","Государственный гимн Российской Федерации","Moscow"},
-                        {"German","83.166M","Deutschlandlied","Berlin" },
-                        {"English","67.886M","God Save the Queen","London" },
-                        {"French","67.081M","La Marseillaise","Paris" },
+                {"Addis Ababa","Mekelle","Gondar", "Adama","Hawassa" },//Ethiopia
+                {"Abu El Matamir","Abu Hummus","Baltim","Cairo","Bilbeis"},
+                {"Aberdeen","Aberfeldy","Albertinia","Balmoral","Aurora" },
+                {"Nakuru","Ruiru","Eldoret","Nairobi","Naivasha"},
+                {"Kampala","Nansana","Kira","Ssabagabo","Mbarara"},
+                {"Oran","Constantine","Batna","Algiers","Djelfa" }},
+                { {"Abakan","Abdulino","Belinsky","Moscow","Beslan"},
+                        {"Haan","Kaarst","Kaltenkirchen","Berlin","Kenzingen" },
+                        {"Bristol","Ely","Hereford","London","Leicester" },
+                        {"French","67.081M","La Marseillaise","Paris" ,""},
                         {"Italian","60.3174M","The Song of the Italians","Rome" },
                         {"Spanish","47.431M","Marcha Real","Madrid" },
                         {"Ukrainian","41.660M","Derzhavnyi Himn Ukrayiny","Kyiv" }} ,
@@ -110,8 +110,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
         population.setText(info[row][country][i][1]);
-
-        square.setText("boob");
+        square.setText(info[row][country][i][0]);
     }
 
     @Override
