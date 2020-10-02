@@ -37,52 +37,22 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         population = (TextView) findViewById(R.id.pop);
         square = (TextView) findViewById(R.id.squre);
         lands = new String[]{"continent","Africa","Europe","Asia","America"};
-        info = new String[][][][] { {    { {"999.6 km2","23,437,435"}, //Niferia
-                {"Amharic","109.2M","Ethiopia, Be happy","Addis Ababa" },//Ethiopia
-                {"Masri","98.42M","Bilady, Bilady, Bilady","Cairo" },
-                {"Afrikaans","57.78M","National anthem of South Africa","Pretoria" },
-                {"Swahili","47.564M","Ee Mungu Nguvu Yetu","Nairobi" },
-                {"English and Swahili","42.729M","Oh Uganda, Land of Beauty","Kampala" },
-                {"Arabic and Berber","43.6M","Kassaman","Algiers" }},
-                { {"Russian","146.748M","Государственный гимн Российской Федерации","Moscow"},
-                        {"German","83.166M","Deutschlandlied","Berlin" },
-                        {"English","67.886M","God Save the Queen","London" },
-                        {"French","67.081M","La Marseillaise","Paris" },
-                        {"Italian","60.3174M","The Song of the Italians","Rome" },
-                        {"Spanish","47.431M","Marcha Real","Madrid" },
-                        {"Ukrainian","41.660M","Derzhavnyi Himn Ukrayiny","Kyiv" }} ,
-                { {"Standard Chinese","1,400,050,000","义勇军进行曲","Beijing"},
-                        {"Hindi and English","1,352,642,280","Jana Gana Mana","New Delhi" },
-                        {"Indonesian","267.670M","Indonesia Raya","Jakarta" },
-                        {"English and Urdu","212,228M","Qaumī Tarānah","Islamabad" },
-                        {"Bengali","161.376M","Amar Sonar Bangla","Dhaka" },
-                        {"Japanese","125.960M","Kimigayo","Tokyo" },
-                        {"Filipino and English","109.048M","Lupang Hinirang","Manila" }},
-                { {"English","328.239M","The Star-Spangled Banner","Washington, D.C."},
-                        {"Portuguese","210.147M","Hino Nacional Brasileiro","Brasília" },
-                        {"Spanish","128.649M","Himno Nacional Mexicano","Mexico City" },
-                        {"English and Spanish","50.372M","Himno Nacional de la República de Colombia","Bogotá" },
-                        {"None(there are many languages)","44.938M","Himno Nacional Argentino","Buenos Aires" },
-                        {"English and French","37.971M","O Canada","Ottawa" },
-                        {"Spanish","32.824M","Himno Nacional del Perú","Lima" }}}};
 
-        //world { continent{   { country1{city{popalation,squre}} }
-
-        countries = new String[][]{{"country","Nigeria","Ethiopia","Egypt","South Africa","Kenya","Uganda","Algeria"},
+        countries = new String[][]{{"country","Nigeria","Ethiopia","Egypt","South Africa","Tanzania","Uganda","Algeria"},
                 {"country","Russia","Germany","United Kingdom","France","Italy","Spain","Ukraine"},
                 {"country","China","India","Indonesia","Pakistan","Bangladesh","Japan","Philippines"}
                 ,{"country","United States","Brazil","Mexico","Colombia","Argentina","Canada","Peru"}};
 
         city = new String[][][] {{ {"Lagos","Kano","Ibadan","Benin City","Port Harcourt"}, //Niferia
-                {"Addis Ababa","Mekelle","Gondar", "Adama","Hawassa" },//Ethiopia
-                {"Abu El Matamir","Abu Hummus","Baltim","Cairo","Bilbeis"},
-                {"Aberdeen","Aberfeldy","Albertinia","Balmoral","Aurora" },
-                {"Nakuru","Ruiru","Eldoret","Nairobi","Naivasha"},
-                {"Kampala","Nansana","Kira","Ssabagabo","Mbarara"},
-                {"Oran","Constantine","Batna","Algiers","Djelfa" }},
-                { {"Abakan","Abdulino","Belinsky","Moscow","Beslan"},
+                {"Addis Ababa","Mekelle","Gondar", "Dire Dawa","Hawassa" },//Ethiopia
+                {"Ismailia","Giza","Alexandria","Cairo","Port Said"},
+                {"Aberdeen","Johannesburg","Durban","Port Elizabeth","Pretoria" },
+                {"Dar es Salaam","Moshi","Morogoro","Dodoma","Kasulu"},
+                {"Kampala","Mukono","Kira","Mityana","Wakiso District"},
+                {"Oran","Constantine","Batna","Algiers","Annaba" }},
+                { {"Saint Petersburg","Novosibirsk","Yekaterinburg","Moscow","Kazan"},
                         {"Haan","Kaarst","Kaltenkirchen","Berlin","Kenzingen" },
-                        {"Bristol","Ely","Hereford","London","Leicester" },
+                        {"Bristol","Cardiff","Cambridge","London","Leicester" },
                         {"Marseille","Lyon","Toulouse","Paris" ,"Nice"},
                         {"Naples","Turin","Palermo","Rome","Milan" },
                         {"Barcelona","Valencia","Seville","Madrid","Málaga" },
@@ -101,6 +71,46 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                         {"Alvear","Bella Vista","Empedrado","Buenos Aires","Esquina" },
                         {"Airdrie","Camrose","Leduc","Ottawa","Lacombe" },
                         {"Cuzco","Huancayo","Huaraz","Lima","Ica" }}};
+        info = new String[][][][] { {    { {"999.6 km2","23,437,435"},{"499 km2","3,931,300"},{"6,800 km2","3,034,200"},
+                {"1,204 km2 ","1,495,800"},{"369 km2","1,005,904"}},
+                {{"527 km2","3,384,569"},{"24.44km2","310,436"},{"192.27 km2","299,969"},
+                        {"1,213 km2","493,000"},{"50 km2","315,267"}},
+                {{"210 km2","366,669"},{"1,579.75 km","8,800,000"},{"2,679 km2 ","5,200,000"},
+                        {"3,085.12 km2","9,908,788"},{"1,351.1 km2","603,787"}},
+                {{"185.7 km2","196,670"},{"1,644.98 km2","5,635,127"},{"225.91 km2","3,720,953"},
+                        {"251.03 km2","967,677"},{"687.54 km2","2,472,612"}},
+                {{"1,493 km2","4,364,541"},{"59 km2","201,150"},
+                        {"360 km2","315,866"},{"2,576 km2","410,956"},
+                        {"878.8 km2","234,452"}},
+                {{"189 km2","1,650,600"},{"31.4 km2","161,996"},{"98.83 km2","317,157"},
+                        {"21 km2","48,002"},{"1,906.7 km2","1,997,418"}} ,
+                {{"2,121 km2","803,329"},{"2,288 km2","464,219"},
+                        {"85 km2","290,645"},{"363 km2","3,915,811"},{"49 km2","257,359"}}},
+                {{ {"1,439 km2","5,351,935"} ,{"502.7 km2","1,473,754"},
+                        {"495 km2","1,349,772"},{"2,511 km2","12,506,468"},
+                        {"425.3 km2","1,143,535"}},
+                        {{"24.22 km2","30,406"},{"37.48 km2","43,493"},
+                                {"23.1 km2","22,109"},{"891.1 km2","3,769,495"},{"36.93 km2","10,340"}},
+                        {{"110 km2","463,400"},{"140.3 km2","364,248"},
+                                {"40.7 km2","124,798"},{"1,572 km2","8,961,989"},
+                                {"4.9 km2","329,839"}},
+                        {{"240.62 km2","869,815"},{"47.87 km2","516,092"},
+                                {"118.3 km2","479,553"},{"105.4 km2","2,148,271"},
+                                {"71.92 km2","340,017"}},
+                        {{"119.02 km2","967,068"},{"130.17 km2","869,206"},
+                                {"158.9 km2","676,118"},{"1,285 km2 ","4,342,212"},
+                                {"181.76 km2","1,399,860"}},
+                        {{"101.4 km2","1,620,343"},{"134.65 km2","801,456"},
+                                {"140 km2","688,711"},{"604.31 km2","3,223,334"},
+                                {"398 km2","571,026"}},
+                        {{"162.42 km2","1,016,515"},{"358 km2","929,063"},
+                                {"409,718 km2","998,103"},{"839 km2","2,950,800"},
+                                {"350 km2","2,139,036"}}},{
+                {{},{}}
+        }
+        };
+
+        //world { continent{   { country1{city{popalation,squre}} }
         adp = new ArrayAdapter<String>(this
                 ,R.layout.support_simple_spinner_dropdown_item,lands);
         snCo.setAdapter(adp);
