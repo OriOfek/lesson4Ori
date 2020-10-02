@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                         {"Odesa","Donetsk","Dnipro","Kyiv","Kharkiv" }} ,
                 { {"Macau","Hong Kong","Tianjin","Beijing","Bengbu"},
                         {"Mumbai","Chennai","Bangalore","New Delhi","Hyderabad" },
-                        {"Surabaya","Bekasi","Bandung","Jakarta","Medan" },
+                        {"Surabaya","Bekasi","Bandung","Jakarta","c" },
                         {"Lahore","Gujranwala","Peshawar","Multan","Hyderabad" },
                         {"Chittagong","Rajshahi","Mymensingh","Dhaka" ,"Khulna"},
                         {"Seto","Ichinomiya","Okazaki","Tokyo","Toyohashi" },
@@ -106,7 +106,24 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                         {{"162.42 km2","1,016,515"},{"358 km2","929,063"},
                                 {"409,718 km2","998,103"},{"839 km2","2,950,800"},
                                 {"350 km2","2,139,036"}}},{
-                {{},{}}
+                {{"115.3 km2","696,100"},{"2,755km2","7,500,700"},{"2,755km2","15,621,200"}
+                        ,{"16,410.5 km2","21,542,000"},{"5,952.14 km2","3,164,467"}},
+                {{"603 km2","12,478,447"},{"426 km2","7,088,000"},{"709km2","8,443,675"}
+                ,{"42.7 km2","257,803"},{"625 km2","6,809,970"}},
+                {{"350.5 km2","2,898,240"},{"210.49 km2","2,931,897"},
+                        {"167.67 km2","2,507,880"},{"662.3 km2","10,770,487"},
+                        {"265.1 km2","2,279,790"}},
+                {{"1,772 km2","11,126,285"},{"240 km2","2,027,001"},
+                        {"215 km2","1,970,042"},{"286 km2","1,871,843"},
+                        {"625 km2","6,809,970"}},
+                {{"5,282.92 km2","8,440,000"},{"96.68 km2","763,952"},
+                        {"91.315 km2","476,543"},{"306 km2","8,906,039"},
+                        {"59.57 km2","2,001,000"}},
+                {{"111.40 km2","127,659"},{"113.82 km2","379,654"},
+                        {"387.20 km2","386,999"},{"2,194.07 km2","13,929,280"},
+                        {"261.86 km2","377,453"}},
+                {{"",""}}
+
         }
         };
 
